@@ -29,6 +29,9 @@ Example config:
     
 ]
 
+Example run:
+
+java -jar HadoopDejavuMigrator-0.0.1-SNAPSHOT.jar config.json log4j.properties 
 
 ##To Do's
 Well really are many to do's but the first will be do tests
