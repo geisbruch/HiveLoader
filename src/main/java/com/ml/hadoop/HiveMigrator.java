@@ -88,11 +88,6 @@ public class HiveMigrator implements Job {
 			conf.setHiveTable(j.getString("hiveTable"));
 			conf.setHiveUrl(j.getString("hiveUrl"));
 			
-			if(j.has("userName")){
-				conf.setUserName(j.getString("userName"));
-				conf.setGroup(j.getString("group"));
-			}
-			
 			JSONArray partitionsFieldRegex = j.getJSONArray("partitionsFieldRegex");
 			//Use treemap for mantains the order
 			Collection<PartitionGeneratorDto>  partitionGenerator= new ArrayList<PartitionGeneratorDto>();

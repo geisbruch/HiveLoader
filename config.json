@@ -6,8 +6,6 @@
 	        "hdfsUri":"localhost:8020",
 	        "hiveTable":"nginx_access_log",
 	        "hiveUrl":"localhost:10000",
-	        "userName":"seginf",
-	        "group":"pepe",
 	        "partitionsFieldRegex":[
 	                {  "name":"ds",
 	                   "regex":".*(\\d{4})-(\\d{2})-(\\d{2})_(\\d{2})_(\\d{2})_(\\d{2})\\.(\\w+)\\..*",
