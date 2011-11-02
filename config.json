@@ -1,0 +1,22 @@
+[
+	{
+	        "cron":"",
+	        "filesFolder":"/tmp/nginx_access_log",
+	        "filesRegex":".*.snappy$",
+	        "hdfsUri":"localhost:8020",
+	        "hiveTable":"nginx_access_log",
+	        "hiveUrl":"localhost:10000",
+	        "userName":"seginf",
+	        "group":"pepe",
+	        "partitionsFieldRegex":[
+	                {  "name":"ds",
+	                   "regex":".*(\\d{4})-(\\d{2})-(\\d{2})_(\\d{2})_(\\d{2})_(\\d{2})\\.(\\w+)\\..*",
+	                   "partition":"$1-$2-$3 $4:$5:$6" },
+	                {  "name":"traffic",
+	                   "regex":".*(\\d{4})-(\\d{2})-(\\d{2})_(\\d{2})_(\\d{2})_(\\d{2})\\.(\\w+)\\..*",
+	                   "partition":"$7" 
+	                }
+	        ]
+	}
+	
+]
